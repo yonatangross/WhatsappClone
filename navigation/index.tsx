@@ -11,6 +11,7 @@ import { Octicons, MaterialCommunityIcons } from "@expo/vector-icons";
 import Colors from "../constants/Colors";
 
 import NotFoundScreen from "../screens/NotFoundScreen";
+import ChatRoomScreen from "../screens/ChatRoomScreen";
 import { RootStackParamList } from "../types";
 import mainTabNavigator from "./MainTabNavigator";
 import LinkingConfiguration from "./LinkingConfiguration";
@@ -75,6 +76,12 @@ function RootNavigator() {
             </View>
           ),
         }}
+      />
+
+      <Stack.Screen
+        name="ChatRoom"
+        component={ChatRoomScreen}
+        options={{ title: "Chat Room" }}
       />
       <Stack.Screen
         name="NotFound"
