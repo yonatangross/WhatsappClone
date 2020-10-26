@@ -17,11 +17,11 @@ const ChatListItem = (props: ChatListItemProps) => {
         <Image source={{ uri: user.imageUri }} style={styles.avatar} />
       </View>
       <View style={styles.midContainer}>
-        <Text>{user.name}</Text>
-        <Text>{chatRoom.lastMessage.content}</Text>
+        <Text style={styles.username}>{user.name}</Text>
+        <Text style={styles.lastMessage}>{chatRoom.lastMessage.content}</Text>
       </View>
       <View style={styles.rightContainer}>
-        <Text>{chatRoom.lastMessage.createdAt}</Text>
+        <Text style={styles.time}>Yesterday</Text>
       </View>
     </View>
   );

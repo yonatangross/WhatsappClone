@@ -8,9 +8,12 @@ const styles = StyleSheet.create({
     padding: 10,
   },
   leftContainer: { flexDirection: "row" },
-  midContainer: {},
+  midContainer: { justifyContent: "space-around" },
   rightContainer: {},
   avatar: { width: 60, height: 60, marginRight: 10, borderRadius: 50 },
+  username: { fontWeight: "bold", fontSize: 16 },
+  lastMessage: { fontSize: 16, color: "grey" },
+  time: { fontSize: 16, color: "grey" },
 });
 
 export default styles;
